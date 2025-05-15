@@ -1,9 +1,10 @@
 <!-- relic-detail.html -->
+<meta charset="UTF-8">
 <div class="relic-detail">
   <div class="gallery">
-    <img :src="currentImage" class="main-image">
+    <img :src="currentImage" class="main-image"  alt="">
     <div class="thumbnails">
-      <img v-for="img in relic.images" :src="img" @click="currentImage = img">
+      <img v-for="img in relic.images" :src="img" @click="currentImage = img" >
     </div>
   </div>
   <div class="info">
